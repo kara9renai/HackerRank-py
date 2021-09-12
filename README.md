@@ -1,3 +1,2 @@
 # HackerRank-py
-
-My solutions to HackRank.
+This repository contains my solutions to HackerRank practice problems with Python3.
