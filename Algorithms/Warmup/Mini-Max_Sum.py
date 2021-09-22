@@ -7,18 +7,11 @@
 #
 
 def miniMaxSum(arr):
-    sums = []
-    for _ in range(len(arr)):
-        tail = arr[-1]
-        arr.pop()
-        sum = 0
-        for j in arr:
-            sum += j
-        sums.append(sum)
-        arr.insert(0, tail)
-    min_sum = min(sums)
-    max_sum = max(sums)
-    print('{} {}'.format(min_sum, max_sum))
+    arr.sort()
+    maxSum = [x for x in arr[1:]]
+    minSum = [x for x in arr[:len(arr)-1]]
+    print(sum(minSum), sum(maxSum))
+
 
 if __name__ == '__main__':
 
