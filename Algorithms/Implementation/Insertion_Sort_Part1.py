@@ -13,13 +13,13 @@ def insertionSort1(n, arr):
     for i in range(len(arr)-2, -1, -1):
         if arr[i] > stored_val:
             arr[i+1] = arr[i]
-            print(' '.join(map(str, arr)))
+            print(*arr)
             if not i:
                 arr[i] = stored_val
-                print(' '.join(map(str, arr)))
+                print(*arr)
         else:
             arr[i+1] = stored_val
-            print(' '.join(map(str, arr)))
+            print(*arr)
             break
             
 if __name__ == '__main__':
